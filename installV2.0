@@ -137,7 +137,7 @@ packages=(
 )
 
 for package in "${packages[@]}"; do
-  pacman -S --needed "$package"
+  pacman -S --needed --noconfirm "$package"
 done
 
 
