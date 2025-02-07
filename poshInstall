@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Installing Oh My Posh..."
+if curl -s https://ohmyposh.dev/install.sh | bash -s; then
+    echo "Oh My Posh installed successfully."
+else
+    echo "Error installing Oh My Posh."
+    exit 1  # Exit with an error code if this command fails
+fi
+
+echo "All installations completed successfully!"
+
+
+
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.bashrc
+source ~/.zshrc

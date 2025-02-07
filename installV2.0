@@ -141,5 +141,3 @@ for package in "${packages[@]}"; do
 done
 
 
-
-
