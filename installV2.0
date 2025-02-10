@@ -1,6 +1,7 @@
 #!/bin/bash
 packages=(
   htop
+  python-toml
   plasma-nm
   vim
   neofetch
